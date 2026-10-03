@@ -690,7 +690,7 @@ function BoardLibrary({
       <header className="board-library-header">
         <div className="library-brand">
           <span><Sparkles size={17} /></span>
-          GraphFlow<strong>IA</strong>
+          ligue<strong>os</strong>pontos
         </div>
         <div className="library-account">
           <span>{account.email}</span>
@@ -926,7 +926,7 @@ function LandingPage({
   return (
     <main className="landing-shell">
       <nav className="landing-nav" aria-label="Navegação principal">
-        <a className="landing-brand" href="#inicio" aria-label="GraphFlow IA, voltar ao início"><span className="landing-brand-mark"><Waypoints size={19} /></span>GraphFlow<span>IA</span></a>
+        <a className="landing-brand" href="#inicio" aria-label="ligueospontos, voltar ao início"><span className="landing-brand-mark"><Waypoints size={19} /></span>ligue<span>os</span>pontos</a>
         <div className="landing-nav-links"><a href="#produto">O produto</a><a href="#como-funciona">Como funciona</a><a href="#para-quem">Para quem é</a></div>
         <div className="landing-nav-actions">
           <button className="landing-login" onClick={() => onModeChange("login")}>Entrar</button>
@@ -984,7 +984,7 @@ function LandingPage({
       </section>
       <section className="landing-audience landing-scroll-reveal" id="para-quem"><div className="landing-audience-heading"><p className="landing-eyebrow"><span /> Seu pensamento não cabe em uma caixa</p><h2>Para quem está criando.<br /><em>Para quem está decidindo.</em></h2></div><div className="landing-audience-grid"><article><div className="landing-audience-number">01 — EXPLORAR</div><h3>Uma ideia merece espaço para crescer.</h3><p>Projetos pessoais, estudos, pesquisa, portfólio ou aquele plano que começou no bloco de notas. Dê um lugar para cada peça e descubra como elas se relacionam.</p><span>Comece simples. Expanda quando fizer sentido.</span></article><article><div className="landing-audience-number">02 — ESTRUTURAR</div><h3>Uma decisão precisa de contexto.</h3><p>Estratégias, oportunidades, reuniões e referências espalhadas deixam de competir pela sua atenção. Visualize dependências e alinhe os próximos passos.</p><span>Mais contexto visível. Menos retrabalho mental.</span></article></div></section>
       <section className="landing-final landing-scroll-reveal"><div className="landing-final-glow" aria-hidden="true" /><p className="landing-eyebrow"><span /> Comece de onde você está</p><h2>Sua próxima boa ideia pode estar <em>entre duas que você já teve.</em></h2><p>Abra um mapa, coloque as peças na mesa e veja o que acontece quando elas finalmente se encontram.</p><div className="landing-final-actions"><button className="landing-cta" onClick={onExplore}>Abrir meu workspace <ChevronRight size={18} /></button><button className="landing-final-account" onClick={() => onModeChange("register")}>Criar uma conta para sincronizar</button></div><p className="landing-local-notice"><strong>Transparência desde o início:</strong> sem conta, seus mapas ficam apenas neste navegador. Para sincronizar com a sua conta e acessar em outro dispositivo, registre-se.</p></section>
-      <footer className="landing-footer"><div className="landing-brand"><span className="landing-brand-mark"><Waypoints size={17} /></span>GraphFlow<span>IA</span></div><p>Ideias mais claras. Próximos passos mais visíveis.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+      <footer className="landing-footer"><div className="landing-brand"><span className="landing-brand-mark"><Waypoints size={17} /></span>ligue<span>os</span>pontos</div><p>Ideias mais claras. Próximos passos mais visíveis.</p><a href="#inicio">Voltar ao topo ↑</a></footer>
       {mode && <div className="auth-backdrop" role="presentation" onMouseDown={() => !busy && onModeChange(null)}>
         <section className="auth-panel" role="dialog" aria-modal="true" aria-labelledby="auth-title" onMouseDown={(event) => event.stopPropagation()}>
           <button className="auth-close" aria-label="Fechar" onClick={() => onModeChange(null)}><X size={19} /></button>
@@ -2015,7 +2015,7 @@ export default function App() {
             <Sparkles size={18} />
           </div>
           <span>
-            GraphFlow<span>IA</span>
+            ligue<span>os</span>pontos
           </span>
         </div>
         <div className="project-name">

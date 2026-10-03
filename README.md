@@ -1,6 +1,6 @@
 <div align="center">
 
-# GraphFlow IA
+# ligueospontos
 
 ### Quando tudo parece solto, ligue os pontos.
 
@@ -10,11 +10,11 @@ Um espaço visual e privado para transformar ideias, referências, arquivos e li
 
 </div>
 
-![Landing page do GraphFlow IA](docs/images/landing-hero.png)
+![Landing page do ligueospontos](docs/images/landing-hero.png)
 
 ## A proposta
 
-Pensamentos raramente chegam organizados. Uma nota depende de uma referência; uma imagem esclarece uma conversa; um documento muda uma decisão. O GraphFlow IA reúne essas peças em um canvas que mostra as relações — sem forçar o raciocínio a caber em uma lista.
+Pensamentos raramente chegam organizados. Uma nota depende de uma referência; uma imagem esclarece uma conversa; um documento muda uma decisão. O ligueospontos reúne essas peças em um canvas que mostra as relações — sem forçar o raciocínio a caber em uma lista.
 
 Comece por uma ideia. Adicione contexto. Faça as conexões aparecerem.
 
@@ -48,7 +48,7 @@ Quando o trabalho pede mais profundidade, o canvas aceita o conteúdo real: text
 
 Cada conta possui uma biblioteca isolada. Os exemplos abaixo foram criados no ambiente local da aplicação: três boards privados e um fluxo conectado com os quatro tipos de conteúdo.
 
-![Biblioteca de boards do GraphFlow IA](docs/images/boards-library.png)
+![Biblioteca de boards do ligueospontos](docs/images/boards-library.png)
 
 ## Foco quando o mapa cresce
 
@@ -205,6 +205,6 @@ O build valida TypeScript e a geração do bundle Vite. O health check confirma 
 
 <div align="center">
 
-**GraphFlow IA** · Ideias mais claras. Próximos passos mais visíveis.
+**ligueospontos** · Ideias mais claras. Próximos passos mais visíveis.
 
 </div>

@@ -694,7 +694,7 @@ body:has(.landing-shell) { overflow: auto; background: #f8f8f3; }
   }
 }
 
-/* GraphFlow canvas — visual language from the supplied running-product references */
+/* ligueospontos canvas — visual language from the supplied running-product references */
 :root {
   color: #192033;
   background: #f7f8fb;
@@ -723,7 +723,7 @@ body:has(.landing-shell) { overflow: auto; background: #f8f8f3; }
   box-shadow: none;
 }
 .brand > span span {
-  color: #192033;
+  color: #5143ca;
 }
 .project-name {
   color: #727889;

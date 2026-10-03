@@ -1,4 +1,4 @@
-# Auditoria técnica — GraphFlow IA — 02/10/2026
+# Auditoria técnica — ligueospontos — 02/10/2026
 
 ## Escopo e conclusão
 
