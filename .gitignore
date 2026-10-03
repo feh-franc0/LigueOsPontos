@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+.dotnet/
+.tooling/
+.playwright-cli/
+.artifact-work/
+outputs/
+backend/GraphFlow.Api/bin/
+backend/GraphFlow.Api/obj/
+backend/GraphFlow.Api/storage/
+*.user
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+.DS_Store

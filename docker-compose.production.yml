@@ -1,0 +1,53 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-8080}:8080"
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/GraphFlow.Api/Dockerfile
+    environment:
+      ConnectionStrings__Postgres: Host=postgres;Port=5432;Database=graphflow;Username=graphflow;Password=${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      Cors__Origins__0: ${APP_ORIGIN:?set APP_ORIGIN}
+      Storage__Path: /data/storage
+      Security__RequireHttps: ${REQUIRE_HTTPS:-true}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - graphflow-storage:/data/storage
+      - graphflow-keys:/data/keys
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/8080 && printf \"GET /health HTTP/1.0\\r\\nHost: localhost\\r\\n\\r\\n\" >&3 && grep -q \"HTTP/1.[01] 200\" <&3'"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: graphflow
+      POSTGRES_USER: graphflow
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - graphflow-postgres:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U graphflow -d graphflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  graphflow-postgres:
+  graphflow-storage:
+  graphflow-keys:

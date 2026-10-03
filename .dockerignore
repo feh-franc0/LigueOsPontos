@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.dotnet
+.tooling
+backend/GraphFlow.Api/bin
+backend/GraphFlow.Api/obj
+backend/GraphFlow.Api/storage
+.artifact-work
+outputs
+.env.development
+.env.local
+.env.*.local
+*.tsbuildinfo
